@@ -1,33 +1,52 @@
-<html lang="en">
+<!doctype html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
     <title>Vue Inventory Application</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <link href="./overrides.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-<div id="app">
-
-    <ul>
-        <div v-if="displayOnlyFavorites">
-            <line-item v-for="item in filteredItems" v-bind:item="item"
-                       v-on:remove="items.splice(index, 1)"></line-item>
-        </div>
-        <div v-else>
-            <line-item v-for="item in items" v-bind:item="item" v-on:remove="items.splice(index, 1)">
-            </line-item>
-        </div>
-    </ul>
-    <h3>
-        Add new items here:
-    </h3>
-    <input v-model="tempName" placeholder="Item Name">
-    <input v-model="tempQuantity" placeholder="How many?">
-    <button v-on:click="addItem()" type="button">Add your new item!</button>
-    <label for="toggleFavorites">Display Only Favorites</label>
-    <input type="checkbox" id="toggleFavorites" v-model="displayOnlyFavorites">
+<div id="app" class="container">
+    <v-app dark>
+        <v-content>
+            <h1>Inventory</h1>
+            <v-list>
+                <div v-if="displayOnlyFavorites">
+                    <line-item v-for="item in filteredItems" v-bind:item="item"
+                               v-bind:nameOfItemToEdit="nameOfItemToEdit"
+                               v-on:remove="items.splice(index, 1)"></line-item>
+                </div>
+                <div v-else>
+                    <line-item v-for="item in items" v-bind:item="item" v-on:remove="items.splice(index, 1)">
+                    </line-item>
+                </div>
+            </v-list>
+            <h3>
+                Add new items here:
+            </h3>
+            <v-text-field outline v-model="tempName" label="Item Name"></v-text-field>
+            <v-text-field outline v-model="tempQuantity" label="How many?"></v-text-field>
+            <v-btn color="success" v-on:click="addItem()" type="v-btn">Add your new item!</v-btn>
+            <v-checkbox id="toggleFavorites" v-model="displayOnlyFavorites" label="Only Display Your Favorites"></v-checkbox>
+            <div v-if="nameOfItemToEdit != ' '">
+                <p>
+                    You are now editing: {{nameOfItemToEdit}}
+                </p>
+                <v-text-field outline v-model="nameToChangeItTo" label="New Name"><</v-text-field>
+                <v-text-field outline v-model="quantityToChangeItTo" label="Qty."></v-text-field>
+                <v-btn color="warning" v-on:click="editItem">Change it</v-btn>
+            </div>
+        </v-content>
+    </v-app>
 </div>
+
 
 <!-- Vue Application -->
 <script src="./vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>
