@@ -43,6 +43,7 @@
                 <v-text-field outline v-model="nameToChangeItTo" label="New Name"><</v-text-field>
                 <v-text-field outline v-model="quantityToChangeItTo" label="How many?"></v-text-field>
                 <v-btn color="warning" v-on:click="editItem">Change it</v-btn>
+                <v-btn color="error" v-on:click="cancelEdits">Stop Editing</v-btn>
             </div>
             <v-checkbox id="toggleFavorites" v-model="displayOnlyFavorites"
                         label="Only Display Your Favorites">

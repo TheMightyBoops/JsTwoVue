@@ -43,7 +43,7 @@ new Vue({
 
         nameOfItemToEdit: " ",
         nameToChangeItTo: " ",
-        quantityToChangeItTo: " "
+        quantityToChangeItTo: " ",
     },
 
     methods: {
@@ -99,6 +99,10 @@ new Vue({
             }
 
             this.nameOfItemToEdit = " ";
+        },
+
+        cancelEdits() {
+            this.nameOfItemToEdit = ' ';
         }
     },
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73bd7c7b-73bf-4af7-a995-bfa740a3a045" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +21,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+                <state relative-caret-position="675">
+                  <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
                 </state>
               </provider>
             </entry>
@@ -33,8 +34,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1156">
-                  <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
+                <state relative-caret-position="244">
+                  <caret line="108" column="15" lean-forward="true" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -42,15 +43,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/overrides.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="6" selection-start-column="6" selection-end-column="6" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/baseline-favorite-24px.svg">
-              <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
         </leaf>
@@ -145,12 +141,12 @@
       <workItem from="1551547024885" duration="9385000" />
       <workItem from="1551556421648" duration="2560000" />
       <workItem from="1551642863824" duration="6443000" />
-      <workItem from="1551728126444" duration="1002000" />
+      <workItem from="1551728126444" duration="3257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40909000" />
+    <option name="totallyTimeSpent" value="43164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="749" extended-state="6" />
@@ -181,27 +177,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/components/list.js" />
     <entry file="file://$PROJECT_DIR$/bootstrap-4.3.1-dist/js/bootstrap.js" />
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/overrides.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/baseline-favorite-24px.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/overrides.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="108" column="15" lean-forward="true" selection-start-line="108" selection-start-column="15" selection-end-line="108" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="675">
+          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
         </state>
       </provider>
     </entry>
