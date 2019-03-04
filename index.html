@@ -28,13 +28,14 @@
                     </line-item>
                 </div>
             </v-list>
-            <h3>
-                Add new items here:
-            </h3>
-            <v-text-field outline v-model="tempName" label="Item Name"></v-text-field>
-            <v-text-field outline v-model="tempQuantity" label="How many?"></v-text-field>
-            <v-btn color="success" v-on:click="addItem()" type="v-btn">Add your new item!</v-btn>
-            <v-checkbox id="toggleFavorites" v-model="displayOnlyFavorites" label="Only Display Your Favorites"></v-checkbox>
+            <div v-if="nameOfItemToEdit === ' '">
+                <h3>
+                    Add new items here:
+                </h3>
+                <v-text-field outline v-model="tempName" label="Item Name"></v-text-field>
+                <v-text-field outline v-model="tempQuantity" label="How many?"></v-text-field>
+                <v-btn color="success" v-on:click="addItem()" type="v-btn">Add your new item!</v-btn>
+            </div>
             <div v-if="nameOfItemToEdit != ' '">
                 <p>
                     You are now editing: {{nameOfItemToEdit}}
@@ -43,6 +44,10 @@
                 <v-text-field outline v-model="quantityToChangeItTo" label="How many?"></v-text-field>
                 <v-btn color="warning" v-on:click="editItem">Change it</v-btn>
             </div>
+            <v-checkbox id="toggleFavorites" v-model="displayOnlyFavorites"
+                        label="Only Display Your Favorites">
+
+            </v-checkbox>git
         </v-content>
     </v-app>
 </div>
