@@ -60,7 +60,7 @@ new Vue({
 
                     if (i === (this.items.length - 1)) {
                         let unusedId = i + 2;
-                        let makeSureIsInt = this.tempQuantity;
+                        let makeSureIsInt = parseInt(this.tempQuantity);
                         let newItem = {
                             id: unusedId,
                             name: this.tempName,
@@ -78,7 +78,7 @@ new Vue({
                     let newItem = {
                         id: 0,
                         name: this.tempName,
-                        quantity: this.quantity,
+                        quantity: parseInt(this.tempQuantity),
                         isFavorite: false
                     };
 

@@ -18,6 +18,10 @@
                     <line-item v-for="item in filteredItems" v-bind:item="item"
                                v-bind:nameOfItemToEdit="nameOfItemToEdit"
                                v-on:remove="items.splice(index, 1)"></line-item>
+                    <h3>
+                        Your are currently only Looking at Favorites,
+                        any added items will not display until viewing all items.
+                    </h3>
                 </div>
                 <div v-else>
                     <line-item v-for="item in items" v-bind:item="item" v-on:remove="items.splice(index, 1)">
@@ -36,7 +40,7 @@
                     You are now editing: {{nameOfItemToEdit}}
                 </p>
                 <v-text-field outline v-model="nameToChangeItTo" label="New Name"><</v-text-field>
-                <v-text-field outline v-model="quantityToChangeItTo" label="Qty."></v-text-field>
+                <v-text-field outline v-model="quantityToChangeItTo" label="How many?"></v-text-field>
                 <v-btn color="warning" v-on:click="editItem">Change it</v-btn>
             </div>
         </v-content>
