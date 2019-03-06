@@ -16,8 +16,7 @@
             <v-list>
                 <div v-if="displayOnlyFavorites">
                     <line-item v-for="item in filteredItems" v-bind:item="item"
-                               v-bind:nameOfItemToEdit="nameOfItemToEdit"
-                               v-on:remove="items.splice(index, 1)"></line-item>
+                               v-bind:nameOfItemToEdit="nameOfItemToEdit"></line-item>
                     <h3>
                         Your are currently only Looking at Favorites,
                         any added items will not display until viewing all items.
